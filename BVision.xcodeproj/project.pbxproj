@@ -1,0 +1,763 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1A52402D005C5A74265C0008 /* Pods_BVision_BVisionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C349E266C9E712B5F86CEDE /* Pods_BVision_BVisionUITests.framework */; };
+		96178C44AC1057F9D6F3D7BC /* Pods_BVisionTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 67057B5D24FB53B351F3506B /* Pods_BVisionTests.framework */; };
+		F983397A293FFDF6004B1E8E /* AccelerationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9833979293FFDF6004B1E8E /* AccelerationView.swift */; };
+		F983397C293FFFAF004B1E8E /* AccelerationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F983397B293FFFAF004B1E8E /* AccelerationViewModel.swift */; };
+		F9AEA184293EB0770067E92F /* BVisionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AEA183293EB0770067E92F /* BVisionApp.swift */; };
+		F9AEA186293EB0770067E92F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AEA185293EB0770067E92F /* ContentView.swift */; };
+		F9AEA188293EB0780067E92F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9AEA187293EB0780067E92F /* Assets.xcassets */; };
+		F9AEA18B293EB0780067E92F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F9AEA18A293EB0780067E92F /* Preview Assets.xcassets */; };
+		F9AEA195293EB0780067E92F /* BVisionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AEA194293EB0780067E92F /* BVisionTests.swift */; };
+		F9AEA19F293EB0780067E92F /* BVisionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AEA19E293EB0780067E92F /* BVisionUITests.swift */; };
+		F9AEA1A1293EB0780067E92F /* BVisionUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AEA1A0293EB0780067E92F /* BVisionUITestsLaunchTests.swift */; };
+		F9AEA1B1293EB4EC0067E92F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AEA1B0293EB4EC0067E92F /* ViewController.swift */; };
+		F9AEA1BB293EC5BC0067E92F /* Detector.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9AEA1BA293EC5BC0067E92F /* Detector.swift */; };
+		F9BC80C72940156700B2DFF3 /* LaneDetector.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F9BC80C52940156700B2DFF3 /* LaneDetector.cpp */; };
+		F9BC80C9294019A300B2DFF3 /* LaneDetectorBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = F9BC80C8294019A300B2DFF3 /* LaneDetectorBridge.mm */; };
+		F9BC80E82949430500B2DFF3 /* StopSign.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BC80E72949430500B2DFF3 /* StopSign.swift */; };
+		F9BC80EA294943B800B2DFF3 /* HexagonParameters.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9BC80E9294943B800B2DFF3 /* HexagonParameters.swift */; };
+		F9BCFF7D294D4CAC002E9233 /* 299087_marker_map_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = F9BCFF7C294D4CAC002E9233 /* 299087_marker_map_icon.svg */; };
+		F9BCFF7F294D4F0F002E9233 /* 1988880_car_front_vehicle_icon.svg in Resources */ = {isa = PBXBuildFile; fileRef = F9BCFF7E294D4F0F002E9233 /* 1988880_car_front_vehicle_icon.svg */; };
+		F9DDBEE3294C678400B61D1D /* regression.h in Sources */ = {isa = PBXBuildFile; fileRef = F9DDBEE2294C678400B61D1D /* regression.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F9AEA191293EB0780067E92F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9AEA178293EB0770067E92F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9AEA17F293EB0770067E92F;
+			remoteInfo = BVision;
+		};
+		F9AEA19B293EB0780067E92F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F9AEA178293EB0770067E92F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F9AEA17F293EB0770067E92F;
+			remoteInfo = BVision;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		67057B5D24FB53B351F3506B /* Pods_BVisionTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BVisionTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6C349E266C9E712B5F86CEDE /* Pods_BVision_BVisionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BVision_BVisionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D025C29FEE91550E578589F3 /* Pods_BVision.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BVision.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9833979293FFDF6004B1E8E /* AccelerationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationView.swift; sourceTree = "<group>"; };
+		F983397B293FFFAF004B1E8E /* AccelerationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccelerationViewModel.swift; sourceTree = "<group>"; };
+		F9AEA180293EB0770067E92F /* BVision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BVision.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AEA183293EB0770067E92F /* BVisionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BVisionApp.swift; sourceTree = "<group>"; };
+		F9AEA185293EB0770067E92F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		F9AEA187293EB0780067E92F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F9AEA18A293EB0780067E92F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F9AEA190293EB0780067E92F /* BVisionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BVisionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AEA194293EB0780067E92F /* BVisionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BVisionTests.swift; sourceTree = "<group>"; };
+		F9AEA19A293EB0780067E92F /* BVisionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BVisionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F9AEA19E293EB0780067E92F /* BVisionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BVisionUITests.swift; sourceTree = "<group>"; };
+		F9AEA1A0293EB0780067E92F /* BVisionUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BVisionUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F9AEA1B0293EB4EC0067E92F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F9AEA1BA293EC5BC0067E92F /* Detector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Detector.swift; sourceTree = "<group>"; };
+		F9BC80C42940156700B2DFF3 /* BVision-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BVision-Bridging-Header.h"; sourceTree = "<group>"; };
+		F9BC80C52940156700B2DFF3 /* LaneDetector.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = LaneDetector.cpp; sourceTree = "<group>"; };
+		F9BC80C62940156700B2DFF3 /* LaneDetector.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = LaneDetector.hpp; sourceTree = "<group>"; };
+		F9BC80C8294019A300B2DFF3 /* LaneDetectorBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = LaneDetectorBridge.mm; sourceTree = "<group>"; };
+		F9BC80E72949430500B2DFF3 /* StopSign.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopSign.swift; sourceTree = "<group>"; };
+		F9BC80E9294943B800B2DFF3 /* HexagonParameters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexagonParameters.swift; sourceTree = "<group>"; };
+		F9BCFF7C294D4CAC002E9233 /* 299087_marker_map_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 299087_marker_map_icon.svg; sourceTree = "<group>"; };
+		F9BCFF7E294D4F0F002E9233 /* 1988880_car_front_vehicle_icon.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = 1988880_car_front_vehicle_icon.svg; sourceTree = "<group>"; };
+		F9DDBEE2294C678400B61D1D /* regression.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = regression.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F9AEA17D293EB0770067E92F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AEA18D293EB0780067E92F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				96178C44AC1057F9D6F3D7BC /* Pods_BVisionTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AEA197293EB0780067E92F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1A52402D005C5A74265C0008 /* Pods_BVision_BVisionUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		993DDE5120AF0C341091D22E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D025C29FEE91550E578589F3 /* Pods_BVision.framework */,
+				6C349E266C9E712B5F86CEDE /* Pods_BVision_BVisionUITests.framework */,
+				67057B5D24FB53B351F3506B /* Pods_BVisionTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F983397D293FFFBE004B1E8E /* CoreMLModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreMLModels;
+			sourceTree = "<group>";
+		};
+		F983397E293FFFD8004B1E8E /* Detecor */ = {
+			isa = PBXGroup;
+			children = (
+				F9AEA1BA293EC5BC0067E92F /* Detector.swift */,
+			);
+			path = Detecor;
+			sourceTree = "<group>";
+		};
+		F983397F293FFFE6004B1E8E /* Acceleration */ = {
+			isa = PBXGroup;
+			children = (
+				F983397B293FFFAF004B1E8E /* AccelerationViewModel.swift */,
+				F9833979293FFDF6004B1E8E /* AccelerationView.swift */,
+				F9BC80E72949430500B2DFF3 /* StopSign.swift */,
+				F9BC80E9294943B800B2DFF3 /* HexagonParameters.swift */,
+			);
+			path = Acceleration;
+			sourceTree = "<group>";
+		};
+		F9AEA177293EB0770067E92F = {
+			isa = PBXGroup;
+			children = (
+				F9BC80C42940156700B2DFF3 /* BVision-Bridging-Header.h */,
+				F9AEA182293EB0770067E92F /* BVision */,
+				F9AEA193293EB0780067E92F /* BVisionTests */,
+				F9AEA19D293EB0780067E92F /* BVisionUITests */,
+				F9AEA181293EB0770067E92F /* Products */,
+				993DDE5120AF0C341091D22E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F9AEA181293EB0770067E92F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F9AEA180293EB0770067E92F /* BVision.app */,
+				F9AEA190293EB0780067E92F /* BVisionTests.xctest */,
+				F9AEA19A293EB0780067E92F /* BVisionUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F9AEA182293EB0770067E92F /* BVision */ = {
+			isa = PBXGroup;
+			children = (
+				F9BCFF82294D527B002E9233 /* LaneDetector */,
+				F9BCFF81294D5268002E9233 /* Resources */,
+				F983397F293FFFE6004B1E8E /* Acceleration */,
+				F983397E293FFFD8004B1E8E /* Detecor */,
+				F983397D293FFFBE004B1E8E /* CoreMLModels */,
+				F9AEA183293EB0770067E92F /* BVisionApp.swift */,
+				F9AEA185293EB0770067E92F /* ContentView.swift */,
+				F9AEA1B0293EB4EC0067E92F /* ViewController.swift */,
+				F9AEA187293EB0780067E92F /* Assets.xcassets */,
+				F9AEA189293EB0780067E92F /* Preview Content */,
+			);
+			path = BVision;
+			sourceTree = "<group>";
+		};
+		F9AEA189293EB0780067E92F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				F9AEA18A293EB0780067E92F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F9AEA193293EB0780067E92F /* BVisionTests */ = {
+			isa = PBXGroup;
+			children = (
+				F9AEA194293EB0780067E92F /* BVisionTests.swift */,
+			);
+			path = BVisionTests;
+			sourceTree = "<group>";
+		};
+		F9AEA19D293EB0780067E92F /* BVisionUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F9AEA19E293EB0780067E92F /* BVisionUITests.swift */,
+				F9AEA1A0293EB0780067E92F /* BVisionUITestsLaunchTests.swift */,
+			);
+			path = BVisionUITests;
+			sourceTree = "<group>";
+		};
+		F9BCFF81294D5268002E9233 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F9BCFF7E294D4F0F002E9233 /* 1988880_car_front_vehicle_icon.svg */,
+				F9BCFF7C294D4CAC002E9233 /* 299087_marker_map_icon.svg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F9BCFF82294D527B002E9233 /* LaneDetector */ = {
+			isa = PBXGroup;
+			children = (
+				F9BC80C52940156700B2DFF3 /* LaneDetector.cpp */,
+				F9DDBEE2294C678400B61D1D /* regression.h */,
+				F9BC80C62940156700B2DFF3 /* LaneDetector.hpp */,
+				F9BC80C8294019A300B2DFF3 /* LaneDetectorBridge.mm */,
+			);
+			path = LaneDetector;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F9AEA17F293EB0770067E92F /* BVision */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9AEA1A4293EB0780067E92F /* Build configuration list for PBXNativeTarget "BVision" */;
+			buildPhases = (
+				F9AEA17C293EB0770067E92F /* Sources */,
+				F9AEA17D293EB0770067E92F /* Frameworks */,
+				F9AEA17E293EB0770067E92F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BVision;
+			productName = BVision;
+			productReference = F9AEA180293EB0770067E92F /* BVision.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F9AEA18F293EB0780067E92F /* BVisionTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9AEA1A7293EB0780067E92F /* Build configuration list for PBXNativeTarget "BVisionTests" */;
+			buildPhases = (
+				0AB4913AC47C4D2690BA4BF3 /* [CP] Check Pods Manifest.lock */,
+				F9AEA18C293EB0780067E92F /* Sources */,
+				F9AEA18D293EB0780067E92F /* Frameworks */,
+				F9AEA18E293EB0780067E92F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9AEA192293EB0780067E92F /* PBXTargetDependency */,
+			);
+			name = BVisionTests;
+			productName = BVisionTests;
+			productReference = F9AEA190293EB0780067E92F /* BVisionTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F9AEA199293EB0780067E92F /* BVisionUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F9AEA1AA293EB0780067E92F /* Build configuration list for PBXNativeTarget "BVisionUITests" */;
+			buildPhases = (
+				90C18133500B917BE871BE16 /* [CP] Check Pods Manifest.lock */,
+				F9AEA196293EB0780067E92F /* Sources */,
+				F9AEA197293EB0780067E92F /* Frameworks */,
+				F9AEA198293EB0780067E92F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F9AEA19C293EB0780067E92F /* PBXTargetDependency */,
+			);
+			name = BVisionUITests;
+			productName = BVisionUITests;
+			productReference = F9AEA19A293EB0780067E92F /* BVisionUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F9AEA178293EB0770067E92F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					F9AEA17F293EB0770067E92F = {
+						CreatedOnToolsVersion = 14.0.1;
+						LastSwiftMigration = 1400;
+					};
+					F9AEA18F293EB0780067E92F = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F9AEA17F293EB0770067E92F;
+					};
+					F9AEA199293EB0780067E92F = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = F9AEA17F293EB0770067E92F;
+					};
+				};
+			};
+			buildConfigurationList = F9AEA17B293EB0770067E92F /* Build configuration list for PBXProject "BVision" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F9AEA177293EB0770067E92F;
+			productRefGroup = F9AEA181293EB0770067E92F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9AEA17F293EB0770067E92F /* BVision */,
+				F9AEA18F293EB0780067E92F /* BVisionTests */,
+				F9AEA199293EB0780067E92F /* BVisionUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F9AEA17E293EB0770067E92F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9AEA18B293EB0780067E92F /* Preview Assets.xcassets in Resources */,
+				F9BCFF7D294D4CAC002E9233 /* 299087_marker_map_icon.svg in Resources */,
+				F9BCFF7F294D4F0F002E9233 /* 1988880_car_front_vehicle_icon.svg in Resources */,
+				F9AEA188293EB0780067E92F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AEA18E293EB0780067E92F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AEA198293EB0780067E92F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0AB4913AC47C4D2690BA4BF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BVisionTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90C18133500B917BE871BE16 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BVision-BVisionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F9AEA17C293EB0770067E92F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9DDBEE3294C678400B61D1D /* regression.h in Sources */,
+				F9BC80EA294943B800B2DFF3 /* HexagonParameters.swift in Sources */,
+				F9AEA186293EB0770067E92F /* ContentView.swift in Sources */,
+				F9AEA1BB293EC5BC0067E92F /* Detector.swift in Sources */,
+				F9BC80E82949430500B2DFF3 /* StopSign.swift in Sources */,
+				F9AEA1B1293EB4EC0067E92F /* ViewController.swift in Sources */,
+				F983397A293FFDF6004B1E8E /* AccelerationView.swift in Sources */,
+				F9BC80C9294019A300B2DFF3 /* LaneDetectorBridge.mm in Sources */,
+				F983397C293FFFAF004B1E8E /* AccelerationViewModel.swift in Sources */,
+				F9AEA184293EB0770067E92F /* BVisionApp.swift in Sources */,
+				F9BC80C72940156700B2DFF3 /* LaneDetector.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AEA18C293EB0780067E92F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9AEA195293EB0780067E92F /* BVisionTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9AEA196293EB0780067E92F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9AEA19F293EB0780067E92F /* BVisionUITests.swift in Sources */,
+				F9AEA1A1293EB0780067E92F /* BVisionUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F9AEA192293EB0780067E92F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9AEA17F293EB0770067E92F /* BVision */;
+			targetProxy = F9AEA191293EB0780067E92F /* PBXContainerItemProxy */;
+		};
+		F9AEA19C293EB0780067E92F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F9AEA17F293EB0770067E92F /* BVision */;
+			targetProxy = F9AEA19B293EB0780067E92F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F9AEA1A2293EB0780067E92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F9AEA1A3293EB0780067E92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F9AEA1A5293EB0780067E92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BVision/Preview Content\"";
+				DEVELOPMENT_TEAM = QFBB64MH66;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BVision",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App uses camera to detect driving objects";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location to compute your speed";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitaeklee.BVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BVision-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F9AEA1A6293EB0780067E92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"BVision/Preview Content\"";
+				DEVELOPMENT_TEAM = QFBB64MH66;
+				ENABLE_PREVIEWS = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/BVision",
+				);
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "App uses camera to detect driving objects";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "App needs location to compute your speed";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitaeklee.BVision;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "BVision-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F9AEA1A8293EB0780067E92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFBB64MH66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitaeklee.BVisionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BVision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BVision";
+			};
+			name = Debug;
+		};
+		F9AEA1A9293EB0780067E92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFBB64MH66;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitaeklee.BVisionTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BVision.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/BVision";
+			};
+			name = Release;
+		};
+		F9AEA1AB293EB0780067E92F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFBB64MH66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitaeklee.BVisionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BVision;
+			};
+			name = Debug;
+		};
+		F9AEA1AC293EB0780067E92F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QFBB64MH66;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.gitaeklee.BVisionUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = BVision;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F9AEA17B293EB0770067E92F /* Build configuration list for PBXProject "BVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9AEA1A2293EB0780067E92F /* Debug */,
+				F9AEA1A3293EB0780067E92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9AEA1A4293EB0780067E92F /* Build configuration list for PBXNativeTarget "BVision" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9AEA1A5293EB0780067E92F /* Debug */,
+				F9AEA1A6293EB0780067E92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9AEA1A7293EB0780067E92F /* Build configuration list for PBXNativeTarget "BVisionTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9AEA1A8293EB0780067E92F /* Debug */,
+				F9AEA1A9293EB0780067E92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F9AEA1AA293EB0780067E92F /* Build configuration list for PBXNativeTarget "BVisionUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F9AEA1AB293EB0780067E92F /* Debug */,
+				F9AEA1AC293EB0780067E92F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F9AEA178293EB0770067E92F /* Project object */;
+}
